@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+================================
+Project Name: Mask Factory
+Project Description: Create a website for the company Mask Factory
+Date: 09/28/2020
+Programmer Name: Sarah Landini and Zion Taber
+================================
+-->
+
+<html>
+
+<head>
+<meta charset = "utf-8">
+<title>Mask Factory</title>
+
+<style type="text/css">
+</style>
+
+<script>
+</script>
+
+</head>
+
+<body>
+
+<h1 style="text-align:center">Mask Factory</h1>
+<h3 style="text-align:center">Email: maskfactory@gmail.com</h3>
+</body>
+	<h2>Contact Information<h2>
+	<h3>Owners: Sarah Landini & Zion Taber</h3>
+	<h3>Address: 3220 Market St, Philadelphia, PA 19104</h3>
+	<h2>About Us</h2>
+	<h3>Products: Our website allows clients to choose the type of loops, filter, and design that best suits them.</h3>
+	<h3>Principles: Since the usafe of masks has been on a steep incline this past year, a market for masks that are not completely utilitarian has emerged. Our organization strives to produce products that keep our customers safe and healthy while also giving the opportunity to put their personality on display.</h3>
+	<h2 style="text-align:center">We promote and ensure safety in style.</h2>
+</body>
+
+</html>
