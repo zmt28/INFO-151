@@ -1,0 +1,55 @@
+/*
+=======================================
+Project Name: Web Page CSS Sheet
+Project Description: Create a personal Cascading Style Sheet for Mask Factory
+Date: 06/10/2020
+Programmers Names: Sarah Landini & Zion Taber
+=======================================
+*/
+
+/* ZMT Format Background */
+
+body{
+    background-color:lemonchiffon;
+}
+
+h1
+{
+color: Navy;
+}
+
+h2
+{
+color: Navy;
+}
+
+h3
+{
+color: SaddleBrown;
+}
+
+h4
+{
+color: SaddleBrown;	
+}
+
+ul
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li
+{
+float: left;
+}
+
+li a
+{
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
