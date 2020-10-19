@@ -5,20 +5,88 @@
     <meta charset="utf-8">
     <title>Mask Factory</title>
     <link href = "CSS/maskfactory.css" rel = "stylesheet" type = "text/css"></link>
+<!-- ZMT JS Function -->
 <script>
+    function validateForm() {
+  var a = document.form.name.value;
+  var b = document.form.address.value;
+  var c = document.form.city.value;
+  var d = document.form.state.value;
+  var e = document.form.zipcode.value;
+  var f = document.form.phonenumber.value;
+  var g = document.form.email.value;
+  var h = document.form.sizes.value;
+  var i = document.form.material.value;
+  var j = document.getElementById("donate").checked;
+  if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "" || h == "" || i == "" || j == false) {
+    alert("All fields must be filled out");
+    return false;
+  }
+  else {
+    alert("Name: "  + a + " Address: " + b + " City: " + c + " State: " + d + " Zipcode: " + e + " Phone Number: " + f + " Email: " + g + " Size: " + h + " Material: " + i)
+    return true;
+  }
+}
 </script>
 </head>
 <body>
 <!-- ZMT Form -->
-<form>
-<h2>Step One: Choose Your Mask's Size</h2>
-<input name="sizes" type="radio" value="Small">Small<br>
-<input name="sizes" type="radio" value="Medium">Medium<br>
-<input name="sizes" type="radio" value="Large">Large<br>
-<h2>Step Two: Choose Your Mask's Material</h2>
+<form name="form">
+  <!-- ZMT Dropdown-->
+<label for='size'><b>Step One: Choose Your Mask's Size</b></label>
+<br>
+<select id="size" name="sizes">
+<option value="Small">Small</option>
+<option value="Medium">Medium</option>
+<option value="Large">Large</option>
+</select>
+<br>
+<br>
+<!-- ZMT Checkbox -->
+<h4> Step Two: Would You Like to DOnate $5 Toward Providing Masks For Frontline Workers?</h4>
+<input type="checkbox" id="donate" name="donate" value="Yes">
+<label for="donate">Yes</label><br>
+<br>
+<!-- ZMT Radio Buttons -->
+<label><b>Step Three: Choose Your Mask's Material</b></label>
+<br>
 <input name="material" type="radio" value="Synthetic">Synthetic<br>
 <input name="material" type="radio" value="Cotton">Cotton<br>
 <input name="material" type="radio" value="Wool">Wool<br>
+<br>
+<!-- ZMT Textboxes -->
+<label><b>Name:</b></label>
+<br>
+<input type="text" name="name">
+<br>
+<label><b>Address:</b></label>
+<br>
+<input type="text" name="address">
+<br>
+<label><b>City:</b></label>
+<br>
+<input type="text" name="city">
+<br>
+<label><b>State:</b></label>
+<br>
+<input type="text" name="state">
+<br>
+<label><b>Zip Code:</b></label>
+<br>
+<input type="text" name="zipcode">
+<br>
+<label><b>Phone Number:</b></label>
+<br>
+<input type="text" name="phonenumber">
+<br>
+<label><b>Email:</b></label>
+<br>
+<input type="text" name="email">
+<br><br>
+<!-- ZMT Buttons -->
+<button onclick = "document.getElementById(form).reset();" >Clear Entries</button>
+<br><br>
+<button onclick = "javascript:validateForm();" >Submit</button>
 </form>
 </body>
 
